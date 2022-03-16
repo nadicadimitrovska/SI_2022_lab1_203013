@@ -1,5 +1,6 @@
 bread x2
-yougurt x1
+sugar x1
 milk x3
-butter x2
-cheese x4
+fish x2
+chocolate x4
+salad x5
