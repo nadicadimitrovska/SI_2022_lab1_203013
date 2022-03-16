@@ -1,0 +1,295 @@
+-Барањата 1,2 и 3 ги извршив.
+-Барањето 4:  
+
+C:\Users\Nadica>git clone https://github.com/nadicadimitrovska/SI_2022_lab1_203013
+Cloning into 'SI_2022_lab1_203013'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Users\Nadica>cd SI_2022_lab1_203013
+
+Прво почнав со командата git clone за да ја превземам од оддалечениот репозиториум
+и да се постави истото како локален и за да можам да правам промени, потоа влегов во локалниот 
+репозиториум со cd
+
+-Барање 5:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git add shopping_list.txt
+
+C:\Users\Nadica\SI_2022_lab1_203013>git commit -m "Add 5 items to the shopping list"
+[master c582ddd] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+Креирав датотека, и ги додадов 5те производи, најпрво направив git add за да се додаде на stage, па после тоа ја додадов како вераија со git commit -m.
+
+-Барање 6:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git add shopping_list.txt
+
+C:\Users\Nadica\SI_2022_lab1_203013>git commit -m "Add quantities to the items."
+[master 85b4180] Add quantities to the items.
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+Ги додадов промените и направив git add па git commit -m. 
+
+-Барање 7:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git branch branch1
+
+C:\Users\Nadica\SI_2022_lab1_203013>git branch branch2
+
+За да се креираат гранки се користи git branch.
+
+-Барање 8:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git branch branch2
+
+C:\Users\Nadica\SI_2022_lab1_203013>git log
+commit 85b4180fb2fa3b2b1774de446dd775e724f6382f (HEAD -> master, branch2, branch1)
+Author: Your Name <you@example.com>
+Date:   Wed Mar 16 17:37:24 2022 +0100
+
+    Add quantities to the items.
+
+commit c582ddd01b0a62e6b934c4f0b4c72100fd601049
+Author: Your Name <you@example.com>
+Date:   Wed Mar 16 17:35:35 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit f593b841dc59ba5d30754fdb257054fa67c38250 (origin/master, origin/HEAD)
+Author: Nadica Dimitrovska <100605408+nadicadimitrovska@users.noreply.github.com>
+Date:   Wed Mar 16 17:25:35 2022 +0100
+
+    Initial commit
+
+Со git log ги добиваме сите логови до сега.
+
+-Барање 9: 
+
+C:\Users\Nadica\SI_2022_lab1_203013>git pull
+Already up to date.
+
+C:\Users\Nadica\SI_2022_lab1_203013>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 639 bytes | 639.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nadicadimitrovska/SI_2022_lab1_203013
+   f593b84..85b4180  master -> master
+
+За синхронизација користев git pull, па после тоа со git push за да ги поставам на одалечениот репозиториум.
+
+-Барање 10:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git checkout branch1
+Switched to branch 'branch1'
+
+За да се префрлиме од master на branch1 тоа се прави со командата git checkout.
+
+-Барање 11:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git add shopping_list.txt
+
+C:\Users\Nadica\SI_2022_lab1_203013>git commit -m "Change quantity of item #5"
+[branch1 0b14742] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ги додадов промените и направив git add па git commit -m.
+
+-Барање 12:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+За да се префрлам на master тоа се прави со командата git checkout.
+
+
+-Барање 13:
+
+
+C:\Users\Nadica\SI_2022_lab1_203013>git add shopping_list.txt
+
+C:\Users\Nadica\SI_2022_lab1_203013>git commit -m "Change quantity of item #2"
+[master 7c37691] Change quantity of item #2
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Ги додадов промените и направив git add па git commit -m.
+
+
+-Барање 14:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git pull
+Already up to date.
+
+C:\Users\Nadica\SI_2022_lab1_203013>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nadicadimitrovska/SI_2022_lab1_203013
+   85b4180..7c37691  master -> master
+
+
+За синхронизација користев git pull, па после тоа со git push за да ги поставам на одалечениот репозиториум.
+
+
+-Барање 15:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git checkout branch2
+Switched to branch 'branch2'
+
+За да се префрлиме на branch2 се користи командата git checkout. 
+
+
+-Барање 16:
+
+
+C:\Users\Nadica\SI_2022_lab1_203013>git add shopping_list.txt
+
+C:\Users\Nadica\SI_2022_lab1_203013>git commit -m "Modify item #4"
+[branch2 f7bf991] Modify item #4
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+Ги додадов промените и направив git add па git commit -m.
+
+-Барање 17:
+
+
+C:\Users\Nadica\SI_2022_lab1_203013>git log
+commit f7bf9918eeb0022820ac5842ccf5d4b5f63f5746 (HEAD -> branch2)
+Author: Your Name <you@example.com>
+Date:   Wed Mar 16 17:52:27 2022 +0100
+
+    Modify item #4
+
+commit 85b4180fb2fa3b2b1774de446dd775e724f6382f
+Author: Your Name <you@example.com>
+Date:   Wed Mar 16 17:37:24 2022 +0100
+
+    Add quantities to the items.
+
+commit c582ddd01b0a62e6b934c4f0b4c72100fd601049
+Author: Your Name <you@example.com>
+Date:   Wed Mar 16 17:35:35 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit f593b841dc59ba5d30754fdb257054fa67c38250
+Author: Nadica Dimitrovska <100605408+nadicadimitrovska@users.noreply.github.com>
+Date:   Wed Mar 16 17:25:35 2022 +0100
+
+    Initial commit
+
+Со git log ги гледаме сите логови до сега. 
+
+-Барање 18:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git add shopping_list.txt
+
+C:\Users\Nadica\SI_2022_lab1_203013>git commit --amend -m "Modify item #4 and add item #6"
+[branch2 0b2507c] Modify item #4 and add item #6
+ Date: Wed Mar 16 17:52:27 2022 +0100
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+За да бидат во еден commit и да не се креира нов commit, се користи оваа команда со git commit --amend -m. 
+
+
+
+-Барање 19:
+
+
+C:\Users\Nadica\SI_2022_lab1_203013>git log
+commit 0b2507c7547860cf427ffd10d33fc589545d8526 (HEAD -> branch2)
+Author: Your Name <you@example.com>
+Date:   Wed Mar 16 17:52:27 2022 +0100
+
+    Modify item #4 and add item #6
+
+commit 85b4180fb2fa3b2b1774de446dd775e724f6382f
+Author: Your Name <you@example.com>
+Date:   Wed Mar 16 17:37:24 2022 +0100
+
+    Add quantities to the items.
+
+commit c582ddd01b0a62e6b934c4f0b4c72100fd601049
+Author: Your Name <you@example.com>
+Date:   Wed Mar 16 17:35:35 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit f593b841dc59ba5d30754fdb257054fa67c38250
+Author: Nadica Dimitrovska <100605408+nadicadimitrovska@users.noreply.github.com>
+Date:   Wed Mar 16 17:25:35 2022 +0100
+
+    Initial commit
+
+
+Со git log ги гледаме сите логови до сега.
+
+-Барање 20:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\Nadica\SI_2022_lab1_203013>git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+
+Нема конфилкт.
+
+-Барање 21:
+
+C:\Users\Nadica\SI_2022_lab1_203013>git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\Nadica\SI_2022_lab1_203013>git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   shopping_list.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Nadica\SI_2022_lab1_203013>git add shopping_list.txt
+
+C:\Users\Nadica\SI_2022_lab1_203013>git commit -m "Merge branch branch2"
+[master 05d5b69] Merge branch branch2
+
+C:\Users\Nadica\SI_2022_lab1_203013>git status
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+После конфликтот го зачував само фајлот shopping_list.txt, најпрво git status за да видам до каде сум, па направив додадов git add за да се стават 
+проментите на stage и ја додадов како верзија со git commit -m "Merge branch branch2" и уште еднаш направи git status. 
+Односно кога имаме конфликт имаме 2 решенија или да го прифатиме (промената која ја направиле) 
+или да ја избришеме таа промена и да ставиме нова. Се користи стратегијата Recursive.
